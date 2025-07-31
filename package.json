@@ -1,0 +1,35 @@
+{
+	"name": "codewars-skyjo-resources",
+	"type": "module",
+	"scripts": {
+		"dev": "bun src/index.ts",
+		"build": "tsc",
+		"start": "npm run build && node dist/index.js",
+		"test": "npm run build && mocha dist/index.js",
+		"prof": "npm run build && node --prof dist/index.js && node --prof-process isolate-*-v8.log && rm isolate-*-v8.log",
+		"lint": "eslint --max-warnings=0 .",
+		"checkShuffleRepartition": "bun -e 'import { checkShuffleRepartition } from \"./src/scripts\"; checkShuffleRepartition()'",
+		"checkShuffleRepartitionWithLodash": "bun -e 'import { checkShuffleRepartition } from \"./src/scripts\"; checkShuffleRepartition(true)'"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21",
+		"prompts": "^2.4.2"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.2.16",
+		"@types/chai": "^5.0.1",
+		"@types/lodash": "^4.17.18",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^22.10.1",
+		"@types/prompts": "^2.4.9",
+		"@typescript-eslint/eslint-plugin": "^8.34.1",
+		"@typescript-eslint/parser": "^8.34.1",
+		"chai": "^5.1.2",
+		"eslint": "^8.57.1",
+		"eslint-config-prettier": "9.1.0",
+		"eslint-plugin-only-warn": "^1.1.0",
+		"mocha": "^11.0.1",
+		"prettier": "3.4.2",
+		"typescript": "^5.8.3"
+	}
+}

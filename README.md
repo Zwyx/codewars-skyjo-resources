@@ -1,6 +1,6 @@
 # Codewars Skyjo Resources
 
-Resources for developers attempting to solve the Codewars kata [Wind at Skyjo](https://www.codewars.com/kata/688b957a12698cb53d5959fe).
+Resources for developers attempting to solve the Codewars kata [Win at Skyjo](https://www.codewars.com/kata/688b957a12698cb53d5959fe).
 
 ---
 
